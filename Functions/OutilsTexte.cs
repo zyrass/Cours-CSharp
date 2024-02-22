@@ -44,5 +44,21 @@ namespace Functions
       }
     }
 
+    /// <summary>
+    /// Affiche un message de bienvenue avec la possibilité de passé un prénom auquel cas un message générque sera affiché.
+    /// </summary>
+    /// <param name="firstname">Le prénom</param>
+    /// <returns></returns>
+    public static string getWelcomeMessage(string? firstname = null)
+    {
+      string message;
+
+      if (firstname == null) message = "Bonjour, bienvenue sur la formation sur C# !";
+      else message = $"Bonjour {firstname}, bienvenue sur la formation sur C#"; 
+      
+      return message;
+
+    }
+
   }
 }

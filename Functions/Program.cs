@@ -25,6 +25,14 @@
       // Conception d'une liste de différents fruits sans définir de tableau en amont.
       OutilsTexte.getFruitsWithParams("Fraises", "Pommes", "Banannes", "Kiwis", "Poires", "Lichee");
 
+      // Conception d'une méthode permettant d'afficher un messgae de bienvenue avec un prénom ou pas.
+      string resultatMessageBienvenueAnonyme = OutilsTexte.getWelcomeMessage();
+      Console.WriteLine($"\n{resultatMessageBienvenueAnonyme}");
+      string resultatMessageBienvenuePersonnaliseeA = OutilsTexte.getWelcomeMessage("Marjorie");
+      Console.WriteLine(resultatMessageBienvenuePersonnaliseeA);
+      string resultatMessageBienvenuePersonnaliseeB = OutilsTexte.getWelcomeMessage("Eléaore");
+      Console.WriteLine(resultatMessageBienvenuePersonnaliseeB);
+
     }
   }
 }
