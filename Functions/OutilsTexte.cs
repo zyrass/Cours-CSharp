@@ -12,6 +12,11 @@ namespace Functions
   internal class OutilsTexte
   {
 
+    /// <summary>
+    /// Permet de compter le nombre de mots dans une phrase
+    /// </summary>
+    /// <param name="phrase">Une chaîne de caractère</param>
+    /// <returns></returns>
     public static int CompterMots(string phrase)
     {
       int nbMots = 0;
@@ -24,6 +29,19 @@ namespace Functions
         }
       }
       return nbMots++;
+    }
+
+    /// <summary>
+    /// Permet d'afficher une liste de fruits avec une quantitée indéfinis de paramètres
+    /// </summary>
+    /// <param name="fruits">Une liste de fruit</param>
+    public static void getFruitsWithParams(params string[] fruits)
+    {
+      Console.WriteLine("Une liste de fruit:\n");
+      for (int i = 0; i < fruits.Length; i++)
+      {
+        Console.WriteLine($"- {fruits[i]}");
+      }
     }
 
   }

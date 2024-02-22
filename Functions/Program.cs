@@ -22,6 +22,9 @@
       double resultatNotesMin = OutilsMaths.getNoteMinWithoutParams(notesEleve);
       Console.WriteLine($"La note minimale obtenue par l'étudiant est {resultatNotesMin}\n");
 
+      // Conception d'une liste de différents fruits sans définir de tableau en amont.
+      OutilsTexte.getFruitsWithParams("Fraises", "Pommes", "Banannes", "Kiwis", "Poires", "Lichee");
+
     }
   }
 }
