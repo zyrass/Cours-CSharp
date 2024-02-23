@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bases", "Bases\Bases.csproj", "{84F79F7C-AA3B-4E84-A8AA-430A77A60D8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{810DA30F-8DCE-4CF7-8EE8-9958097D8C23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functions", "Functions\Functions.csproj", "{810DA30F-8DCE-4CF7-8EE8-9958097D8C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaines", "Chaines\Chaines.csproj", "{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{810DA30F-8DCE-4CF7-8EE8-9958097D8C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{810DA30F-8DCE-4CF7-8EE8-9958097D8C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{810DA30F-8DCE-4CF7-8EE8-9958097D8C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

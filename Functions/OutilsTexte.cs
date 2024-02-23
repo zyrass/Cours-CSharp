@@ -54,11 +54,44 @@ namespace Functions
       string message;
 
       if (firstname == null) message = "Bonjour, bienvenue sur la formation sur C# !";
-      else message = $"Bonjour {firstname}, bienvenue sur la formation sur C#"; 
-      
-      return message;
+      else message = $"Bonjour {firstname}, bienvenue sur la formation sur C#";
 
+      return message;
     }
 
+    static string phrase = """
+     Au 30 juin 2022, en France, 51 % des abonnements internet à haut et très haut débit
+     étaient en fibre optique (+ 11 points en un an).
+     """;
+
+    public static void DecomposerUnePhrase(string phrase)
+    {
+      int nbLettres = 0, nbChiffres = 0, nbPonctuations = 0, nbEspaces = 0, nbSymboles = 0;
+      int nbMajuscules = 0;
+
+      foreach (char character in phrase.ToCharArray())
+      {
+        if (char.IsLetter(character)) nbLettres++;
+        else if (char.IsDigit(character)) nbChiffres++;
+        else if (char.IsPunctuation(character)) nbPonctuations++;
+        else if (char.IsWhiteSpace(character)) nbEspaces++;
+        else if (char.IsSymbol(character)) nbSymboles++;
+
+        if (char.IsUpper(character)) nbMajuscules++;
+
+      }
+
+      string resultat = $"""
+       La phrase contient {phrase.Length} caractères, dont :{"\n"}
+          - {nbLettres} lettres, dont {nbMajuscules} majuscules
+          - {nbChiffres} chiffres
+          - {nbPonctuations} ponctuations
+          - {nbEspaces} espaces
+          - {nbSymboles} symboles
+       """;
+
+      // Afficher le résultat
+      Console.WriteLine(resultat);
+    }
   }
 }
