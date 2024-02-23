@@ -46,5 +46,34 @@ namespace Functions
       return noteMin;
     }
 
+    /// <summary>
+    /// Permet de retrouver le nombre plus petit et plus grand d'une série de plusieurs nombre à virgule
+    /// </summary>
+    /// <param name="numbers">double[]</param>
+    /// <returns></returns>
+    public static (double, double) GetValuesMinMax(params double[] numbers)
+    {
+      double min = double.MaxValue;
+      double max = double.MinValue;
+
+      foreach (double number in numbers)
+      {
+        if (number > max) max = number;
+        if (number < min) min = number;
+      }
+
+      return (min, max);
+    }
+
+    public static void GetValuesMinMax(out double min, out double max, params double[] numbers)
+    {
+      min = double.MaxValue;
+      max = double.MinValue;
+      foreach (double number in numbers)
+      {
+        if (number > max) max = number;
+        if (number < min) min = number;
+      }
+    }
   }
 }
