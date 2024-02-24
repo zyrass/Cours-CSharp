@@ -104,6 +104,17 @@ namespace Chaines
         """;
       DemoChar.DecomposerUnePhrase(wikipedia);
 
+      // ---------------------------------------------------------------------------------
+      // chaînes composite
+
+      string nom = "Alban Ivanov";
+      decimal montant = 13000000;
+      DateTime date = new DateTime(2024, 3, 20);
+      string chaineComposite = string.Format("{0} a gagné {1} au loto le {2}.", nom, montant.ToString("C2"), date.ToString("D"));
+      Console.WriteLine(chaineComposite);
+
+
+
     }
   }
 }
