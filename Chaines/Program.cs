@@ -111,9 +111,26 @@ namespace Chaines
       decimal montant = 13000000;
       DateTime date = new DateTime(2024, 3, 20);
       string chaineComposite = string.Format("{0} a gagné {1} au loto le {2}.", nom, montant.ToString("C2"), date.ToString("D"));
+      string chaineComposite2 = string.Format("{0} a gagné {1:C2} au loto le {2:D}.", nom, montant, date);
+
       Console.WriteLine(chaineComposite);
+      Console.WriteLine(chaineComposite2);
 
+      // ---------------------------------------------------------------------------------
+      // Exemple chaînes composite
 
+      string product = "Playsation";
+      int quantity = 6;
+      decimal unitPrice = 499.99m;
+
+      string resultatExempleChaineComposite = $"""
+       {"\n"}+ ---------------------------- + ------------ + -------------------------------- +
+       | Produit                      |   Quantité   |                    Prix Unitaire |
+       + ---------------------------- + ------------ + -------------------------------- +
+       | {product,-28} | {quantity,12/2:N0}       | {unitPrice,32:C2} |
+       + ---------------------------- + ------------ + -------------------------------- +{"\n"}
+       """;
+      Console.WriteLine(resultatExempleChaineComposite);
 
     }
   }

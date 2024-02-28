@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bases", "Bases\Bases.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Functions", "Functions\Functions.csproj", "{810DA30F-8DCE-4CF7-8EE8-9958097D8C23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaines", "Chaines\Chaines.csproj", "{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chaines", "Chaines\Chaines.csproj", "{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Date", "Date\Date.csproj", "{8F40B097-1318-42F0-B2EA-C251FC7E4DF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A843247-2E4D-4E33-83A9-21BACE0B7DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F40B097-1318-42F0-B2EA-C251FC7E4DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F40B097-1318-42F0-B2EA-C251FC7E4DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F40B097-1318-42F0-B2EA-C251FC7E4DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F40B097-1318-42F0-B2EA-C251FC7E4DF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
